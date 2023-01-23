@@ -1,0 +1,29 @@
+{
+  "name": "be-awards",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/danangkonang/be-awards.git"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon main",
+    "start": "node main",
+    "migrate:up": "node db/up",
+    "migrate:down": "node db/down"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@danangkonang/js-validation": "^0.1.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

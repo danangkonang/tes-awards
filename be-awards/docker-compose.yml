@@ -1,0 +1,17 @@
+version: "3"
+services:
+  regional-db:
+    image: postgres:9.6.21-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=awards
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    container_name: db-pg
+    networks:
+      - pg-net
+networks:
+  pg-net:
